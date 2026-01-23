@@ -1,52 +1,57 @@
-/* color palette from <https://github.com/vuejs/theme> */
-:root {
-  --vt-c-white: #ffffff;
-  --vt-c-white-soft: #f8f8f8;
-  --vt-c-white-mute: #f2f2f2;
 
-  --vt-c-black: #181818;
-  --vt-c-black-soft: #222222;
-  --vt-c-black-mute: #282828;
-
-  --vt-c-indigo: #2c3e50;
-
-  --vt-c-divider-light-1: rgba(60, 60, 60, 0.29);
-  --vt-c-divider-light-2: rgba(60, 60, 60, 0.12);
-  --vt-c-divider-dark-1: rgba(84, 84, 84, 0.65);
-  --vt-c-divider-dark-2: rgba(84, 84, 84, 0.48);
-
-  --vt-c-text-light-1: var(--vt-c-indigo);
-  --vt-c-text-light-2: rgba(60, 60, 60, 0.66);
-  --vt-c-text-dark-1: var(--vt-c-white);
-  --vt-c-text-dark-2: rgba(235, 235, 235, 0.64);
-}
 
 /* semantic color variables for this project */
 :root {
-  --color-background: var(--vt-c-white);
-  --color-background-soft: var(--vt-c-white-soft);
-  --color-background-mute: var(--vt-c-white-mute);
+  /* Light Mode */
+  --color-background: var(--gray-50);
+  --color-background-soft: var(--gray-100);
+  --color-background-mute: var(--vt-c-white);
 
-  --color-border: var(--vt-c-divider-light-2);
-  --color-border-hover: var(--vt-c-divider-light-1);
+  --color-border: var(--gray-300);
+  --color-border-hover: var(--gray-600);
 
-  --color-heading: var(--vt-c-text-light-1);
-  --color-text: var(--vt-c-text-light-1);
+  --color-heading: var(--gray-900);
+  --color-text: var(--gray-600);
+
+  /* Buttons & Primary Actions */
+  --color-primary: var(--indigo-600);
+  --color-primary-hover: var(--indigo-700);
+  --color-primary-light: var(--indigo-400);
+
+  /* Gradient Colors */
+  --gradient-start: var(--indigo-500);
+  --gradient-middle: var(--purple-500);
+  --gradient-end: var(--pink-500);
+
+  /* Card Backgrounds */
+  --card-background: var(--vt-c-white);
+  --card-background-hover: var(--gray-50);
+
+  /* Accent Colors */
+  --accent-success: var(--green-500);
+  --accent-warning: var(--yellow-500);
+  --accent-linkedin: var(--blue-600);
+  --accent-email: var(--rose-600);
 
   --section-gap: 160px;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --color-background: var(--vt-c-black);
-    --color-background-soft: var(--vt-c-black-soft);
-    --color-background-mute: var(--vt-c-black-mute);
+    /* Dark Mode */
+    --color-background: #0F172A;
+    --color-background-soft: var(--gray-900);
+    --color-background-mute: var(--gray-800);
 
-    --color-border: var(--vt-c-divider-dark-2);
-    --color-border-hover: var(--vt-c-divider-dark-1);
+    --color-border: var(--gray-700);
+    --color-border-hover: var(--gray-600);
 
-    --color-heading: var(--vt-c-text-dark-1);
-    --color-text: var(--vt-c-text-dark-2);
+    --color-heading: var(--vt-c-white);
+    --color-text: var(--gray-300);
+
+    /* Card Backgrounds */
+    --card-background: var(--gray-800);
+    --card-background-hover: var(--gray-700);
   }
 }
 
@@ -83,4 +88,32 @@ body {
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+/* Circle Animations */
+@keyframes circle {
+  0% {
+    transform: translate(0px, 0px) scale(1);
+  }
+  33% {
+    transform: translate(30px, -50px) scale(1.1);
+  }
+  66% {
+    transform: translate(-20px, 20px) scale(0.9);
+  }
+  100% {
+    transform: translate(0px, 0px) scale(1);
+  }
+}
+
+.animate-circle {
+  animation: circle 7s infinite;
+}
+
+.animation-delay-2000 {
+  animation-delay: 2s;
+}
+
+.animation-delay-4000 {
+  animation-delay: 4s;
 }
