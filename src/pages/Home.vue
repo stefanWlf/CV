@@ -1,7 +1,7 @@
 <template>
-  <TheWelcome/>
+  <CardComponent/>
 </template>
 
 <script setup lang="ts">
-import TheWelcome from '../components/TheWelcome.vue'
+import CardComponent from '@/components/CardComponent.vue';
 </script>

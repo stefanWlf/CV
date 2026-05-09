@@ -1,10 +1,10 @@
 :root {
-  /* Haupt-Farbschema (Farbverläufe) */
+  /* Main Color Scheme (Gradients) */
   --indigo-500: #6366F1;
   --purple-500: #A855F7;
   --pink-500: #EC4899;
 
-  /* Akzentfarben */
+  /* Accent Colors */
   --indigo-400: #818CF8;
   --indigo-600: #4F46E5;
   --indigo-700: #4338CA;
@@ -14,12 +14,12 @@
   --blue-600: #2563EB;
   --rose-600: #E11D48;
 
-  /* Dark Mode Hintergrund */
+  /* Dark Mode Background */
   --gray-900: #111827;
   --gray-800: #1F2937;
   --gray-700: #374151;
 
-  /* Light Mode Hintergrund */
+  /* Light Mode Background */
   --gray-50: #F9FAFB;
   --gray-100: #F3F4F6;
 
@@ -28,6 +28,6 @@
   --gray-300: #D1D5DB;
   --gray-600: #4B5563;
 
-  /* Spezielle Akzente */
+  /* Special Accents */
   --green-500: #22C55E;
 }

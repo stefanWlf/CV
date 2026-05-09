@@ -4,7 +4,10 @@
   <div class="circle circle-yellow"></div>
   <div class="circle circle-pink"></div>
   
-  <RouterView/>
+  <!-- Site view -->
+  <div class="centered">
+    <RouterView/>
+  </div>
 </template>
 
 <script setup lang="ts">
@@ -12,6 +15,10 @@ import { RouterView } from 'vue-router'
 </script>
 
 <style scoped>
+.centered {
+  margin: 0 256px;
+}
+
 .circle {
   position: fixed;
   width: 18rem;
